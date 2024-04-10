@@ -1,7 +1,15 @@
 let arr = ["rock", "paper", "scissors"];
 
 function getComputerChoice(rock, paper, scissors) {
-    console.log(arr[(Math.floor(Math.random() * arr.length))]);
+    let cpuSelection = arr[(Math.floor(Math.random() * arr.length))];
+    return cpuSelection;
 }
-
-getComputerChoice();
+function playRound(playerSelection, computerSelection) {
+    // your code here!
+    
+  }
+  
+  const playerSelection = "rock";
+  const computerSelection = getComputerChoice();
+  console.log(playRound(playerSelection, computerSelection));
+  
