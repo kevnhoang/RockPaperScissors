@@ -1,4 +1,6 @@
 let arr = ["rock", "paper", "scissors"];
+let userInput = prompt("Welcome to the Great Battle of Office Supplies! The one between the never ending debate of which is the better choice.             Rock, Paper, or Scissors? Whichever you ask, will be granted. And you will fight to the death to see who reigns victorious.");
+
 
 function getComputerChoice(rock, paper, scissors) {
     let cpuSelection = arr[(Math.floor(Math.random() * arr.length))];
@@ -6,7 +8,6 @@ function getComputerChoice(rock, paper, scissors) {
 }
 function playRound(playerSelection, computerSelection) {
     // your code here!
-    let userInput = prompt("Welcome to the Great Battle of Office Supplies! The one between the never ending debate of which is the better choice.             Rock, Paper, or Scissors? Whichever you ask, will be granted. And you will fight to the death to see who reigns victorious.");
 
         /*  Scissors loses to rock  */
         if(userInput === "scissors" && computerSelection === "rock") {
